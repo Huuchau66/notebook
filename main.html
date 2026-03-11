@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Your Notebook</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="LogOut"><button onclick="logout()">LogOut</button></div>
+
+    <h1>NOTEBOOK</h1>
+    <div class="inputBox">
+      <p>Title:</p>
+      <textarea
+        id="myTitle"
+        oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'
+        style="width: 70%; overflow: hidden; resize: none; min-height: 10px"
+        placeholder="Nhập tiêu đề..."
+      ></textarea>
+      <!--Se dua ra cau hoi tu trong data cau hoi-->
+      <p>Note:</p>
+      <textarea
+        id="myNote"
+        oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'
+        style="width: 70%; overflow: hidden; resize: none; min-height: 60px"
+        placeholder="Nhập nội dung..."
+      ></textarea>
+      <br />
+      <div>
+        <button onclick="UserInput()">Save</button>
+        <button onclick="resetNotes()">Clear All</button>
+        <br />
+      </div>
+    </div>
+    <!--Noi nhap dap an va dua ra dap an chinh xac sau do dua dap an chinh xac vao data note -->
+    <h2>Your notes:</h2>
+
+    <span id="note-show"></span>
+    <div></div>
+    <script src="/main.js"></script>
+  </body>
+</html>
