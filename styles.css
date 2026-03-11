@@ -1,0 +1,75 @@
+@media screen and (max-width: 768px) {
+  body {
+    background-color: lightblue; /* Thay đổi màu nền */
+    font-family: "Courier New", Courier, monospace;
+  }
+  .container {
+    width: 100%; /* Chuyển bố cục sang 1 cột */
+  }
+}
+body {
+  background-color: lightblue;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  padding: 20px;
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #2dac31;
+  border-radius: 30px;
+  padding: 5%;
+  textarea {
+    border-radius: 10px;
+    text-align: start;
+  }
+  button {
+    border-radius: 5px;
+  }
+  button:hover {
+    background-color: bisque;
+  }
+}
+.LogOut {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  button {
+    border-radius: 5px;
+  }
+  button:hover {
+    background-color: bisque;
+  }
+}
+
+.loginpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+
+  div {
+    border: 2px solid #2dac31;
+    border-radius: 50px;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px;
+  }
+
+  input {
+    border-radius: 8px;
+    border-color: brown;
+    height: 20px;
+  }
+  button {
+    border-radius: 5px;
+  }
+  button:hover {
+    background-color: bisque;
+  }
+}
