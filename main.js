@@ -113,5 +113,5 @@ function login() {
 }
 function logout() {
   localStorage.removeItem("login");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
